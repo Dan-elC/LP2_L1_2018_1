@@ -8,8 +8,8 @@ public class Worker extends Person{
 	public Worker(){
 
 	}
-	public Worker(String name, Sex sex, String dni, int age, StateC civilstate, double salary, TDedic typededication, int anexo){
-		super( name, sex, dni, age, civilstate);
+	public Worker(String name, String surnameP, Sex sex, String dni, int age, StateC civilstate, double salary, TDedic typededication, int anexo){
+		super( name, surnameP,sex, dni, age, civilstate);
 		this.salary=salary;
 		this.typededication=typededication;
 		this.anexo=anexo;
@@ -35,6 +35,6 @@ public class Worker extends Person{
 		this.anexo=anexo;
 	}
 
-	
+
 
 }

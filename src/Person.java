@@ -1,6 +1,7 @@
 public abstract class Person{
 	
 	private String name;
+	private String surnameP;
 	private Sex sex;
 	private String dni;
 	private int age;
@@ -9,8 +10,9 @@ public abstract class Person{
 	public Person(){
 
 	}
-	public Person(String name, Sex sex, String dni, int age, StateC civilstate){
+	public Person(String name, String surnameP, Sex sex, String dni, int age, StateC civilstate){
 		this.name=name;
+		this.surnameP = surnameP;
 		this.sex=sex;
 		this.dni=dni;
 		this.age=age;
@@ -22,6 +24,12 @@ public abstract class Person{
 	}
 	public void setName(String name){
 		this.name = name;
+	}
+	public String getSurname(){
+		return surnameP;
+	}
+	public void setSurnameP(String surnameP){
+		this.surnameP=surnameP;
 	}
 	public Sex getSex(){
 		return sex;
