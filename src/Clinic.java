@@ -47,7 +47,16 @@ public class Clinic{
 	}
 
 	public String showMedAdmin(){
-		
-		return "";
+		String chain = "";
+
+		for(Worker work : getWorkers()){
+			if(work instanceof Medic){
+				chain += "\n" + ((Medic)work).consultData();
+			}
+			if(work instanceof Admin){
+				chain += "\n" + ((Admin)work).consultData();
+			}
+		}
+		return chain;
 	}
 }
