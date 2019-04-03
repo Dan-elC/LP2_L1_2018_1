@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Clinic{
 
 	private String name;
@@ -41,6 +43,6 @@ public class Clinic{
 	}
 
 	public void addWorker(Worker worker){
-		workers.add(Worker);
+		workers.add(worker);
 	}
 }

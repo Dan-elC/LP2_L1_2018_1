@@ -30,7 +30,7 @@ public class Chief extends Worker{
 		return carnet;
 	}
 	public void setCarnet(String carnet){
-		this.dni=carnet;
+		setDni(this.carnet);
 		this.carnet=carnet;
 	}
 }
