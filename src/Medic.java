@@ -1,4 +1,4 @@
-public class Medic extends Worker{
+public class Medic extends Worker implements Consultable{
 	
 	private String surnameM;
 	private int colnumber;
@@ -31,5 +31,10 @@ public class Medic extends Worker{
 	}
 	public void setSpeciality(Speciality speciality){
 		this.speciality=speciality;
+	}
+
+	public String consultData(){
+
+		return getName() + " " + getSurnameP() + " " + getSurnameM() + " " + speciality.getSpeciality();
 	}
 }

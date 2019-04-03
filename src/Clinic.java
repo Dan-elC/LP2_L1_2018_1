@@ -45,4 +45,9 @@ public class Clinic{
 	public void addWorker(Worker worker){
 		workers.add(worker);
 	}
+
+	public String showMedAdmin(){
+		
+		return "";
+	}
 }

@@ -25,7 +25,7 @@ public abstract class Person{
 	public void setName(String name){
 		this.name = name;
 	}
-	public String getSurname(){
+	public String getSurnameP(){
 		return surnameP;
 	}
 	public void setSurnameP(String surnameP){

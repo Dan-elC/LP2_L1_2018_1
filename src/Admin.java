@@ -1,4 +1,4 @@
-public class Admin extends Worker{
+public class Admin extends Worker implements Consultable{
 	
 	private String surnameM;
 	private RegimenWork regimen;
@@ -31,5 +31,10 @@ public class Admin extends Worker{
 	}
 	public void setFunction(String function){
 		this.function=function;
+	}
+
+	public String consultData(){
+
+		return getName() + " " + getSurnameP() + " " + getSurnameM() + " " + getTypededication() + " " + getRegimen();
 	}
 }
