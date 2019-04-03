@@ -1,4 +1,4 @@
-public class Medic{
+public class Medic extends Worker{
 	
 	private String surnameM;
 	private int colnumber;
